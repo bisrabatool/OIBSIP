@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif 'Popins';
+    box-sizing: border-box;
+}
+
+.container-conv {
+    width: 100%;
+    height: 100vh;
+    background:black;
+    display: flex;
+    justify-content: center;
+}
+
+div.Converter {
+    width: 100%;
+    max-width: 350px;
+    height:380px;
+    background:black;
+    opacity: 0.9;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgb(217, 144, 49), 0 0 20px rgb(217, 144, 49), 0 0 30px rgb(217, 144, 49);
+}
+
+h1 {
+    text-align: center;
+    color:rgb(217, 144, 49);
+    text-shadow: 0 0 10px rgb(217, 144, 49), 0 0 20px rgb(217, 144, 49);
+}
+
+h2 {
+    text-align: center;
+    color:rgb(217, 144, 49); 
+    text-shadow: 0 0 10px rgb(217, 144, 49), 0 0 20px rgb(217, 144, 40);
+
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+div.cel .far {
+    width: 100%;
+    max-width: 380px; 
+}
+
+.cel input,
+.far input {
+    
+    font-size: 25px;
+    font-style: bold;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    color: rgb(217, 144, 49);
+    box-shadow: 0 0 10px rgb(217, 144, 49), 0 0 20px rgb(217, 144, 40);
+    border: none;    
+    outline:none;
+    transition: 0.3s; 
+}
+
+.cel input:hover{
+    border: 4px solid rgb(217, 144, 49);
+
+}
+.far input:hover {
+    border: 4px solid rgb(217, 144, 49); 
+}
+.btn{
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+   transition: color 0.3s;
+}
+    
+
+.btn:hover {
+    transform: scale(1.1);
+  }
+  
+
+
+
+
+div 
+button{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(217, 144, 49) ;
+    box-shadow:0 0 10px rgb(217, 144, 49), 0 0 20px rgb(217, 144, 40);
+}
+@media screen and (min-width: 768px) {
+    .main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cel,
+    .far {
+        width: 43%; /* Adjust width to leave some space between input fields */
+    }
+}
+
+
