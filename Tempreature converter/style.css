@@ -115,7 +115,7 @@ button{
 
     .cel,
     .far {
-        width: 43%; /* Adjust width to leave some space between input fields */
+        width: 43%; 
     }
 }
 

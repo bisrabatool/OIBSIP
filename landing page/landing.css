@@ -1,0 +1,447 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+
+:root {
+    --red: #d9042b;
+    --purple: #a6035d;
+    --yellow: #f28705;
+    --white: #fff;
+    --sand: #ffe8d3;
+    --black: #1b1b1b;
+    --font: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--sand);
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 80px;
+    z-index: 10000;
+    transition: 0.3s;
+}
+
+.logo {
+    font-size: 1.5em;
+    text-decoration:none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:white;
+}
+
+span {
+    position: relative;
+    text-decoration:none;
+    text-decoration-color: var(--purple);
+    text-decoration-thickness: 3px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header nav a {
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    color:white;
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    color:palegreen;
+}
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .swiper-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.home .swiper-hero .swiper-wrapper {
+    position: relative;
+}
+
+.home .swiper-hero .swiper-wrapper .swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.home .swiper-hero .swiper-wrapper .swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.home .container {
+    position: relative;
+    text-align: center;
+}
+
+.home .container h2 {
+    color:white;
+    font-size: 3em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.btn {
+    background: var(--purple);
+    color:white;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s all ease;
+}
+
+.btn:hover {
+    background-color:palegreen;
+}
+
+.product {
+
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 100px 100px;
+    background-color: black;
+}
+
+.title{
+    color:white;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+}
+
+.product .cards {
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0fr));
+    gap: 30px;
+}
+
+.product .cards .card {
+    position: relative;
+    width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.product .cards .card:hover {
+    box-shadow: 4px 3px 14px 0px grey;
+}
+
+.product .cards .card .card-img {
+    position: relative;
+    width: 350px;
+    height: 400px;
+}
+
+.product .cards .card .card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    color: var(--white);
+    font-size: 1em;
+    font-weight: 300;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.discount {
+    background: var(--yellow);
+}
+
+.unavailable {
+    background: var(--red);
+}
+
+.product .cards .card .card-content {
+    position: relative;
+    width: 350px;
+    height: 80px;
+    padding: 10px;
+}
+
+.product .cards .card .card-content h3 {
+    font-size: 1.2em;
+    color:white;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.product .cards .card .card-content .price {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.product .cards .card .card-content .price p {
+    font-size: 1em;
+    font-weight: 300;
+    color:white;
+}
+
+.product .cards .card .card-content .price .price-discount {
+    text-decoration: line-through;
+}
+
+.product .cards .card .card-content .price .price-real {
+    font-weight: 500;
+}
+
+.ourbest{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 100px 80px;
+    background-color:rgb(27, 26, 26);
+}
+
+.ourbest .swiper {
+    position: relative;
+    width: 100%;
+}
+
+.ourbest .swiper .swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+    padding: 50px 80px;
+}
+
+.ourbest .swiper .swiper-slide .img-box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.ourbest .swiper .swiper-slide .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ourbest .swiper .swiper-slide .text {
+    position: relative;
+    width: 350px;
+}
+
+.ourbest .swiper .swiper-slide .text h4 {
+    color:white;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.ourbest .swiper .swiper-slide .text p {
+    font-size: 1em;
+    color: #fff;
+    font-style: italic;
+}
+
+.ourbest .swiper .swiper-button-prev,
+.ourbest .swiper .swiper-button-next {
+    color:white;
+}
+.newsletter {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(68, 198, 102, 0.3), rgba(43, 209, 129, 0.3)), url('./image/closeup-portrait-attractive-girl-sunglasses-with-vinous-lips-city-her-long-hair-is-flying-wind-she-is-smiling-with-snow-white-smile.jpg') center/cover;
+}
+
+.newsletter .subtitle {
+    width: 700px;
+    text-align: center;
+}
+
+.newsletter .subtitle p {
+    font-size: 1.5em;
+    color:white;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.newsletter form .input-box input {
+    border: 1px solid var(--purple);
+    outline: none;
+    padding: 10.5px;
+    width: 300px;
+}
+
+.newsletter form .input-box .btn {
+    padding: 11px;
+    border: none;
+    cursor: pointer;
+    width: 120px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    padding: 50px 80px;
+    background:palegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+}
+
+footer .logo{
+    text-decoration:none;
+    color:#000;
+}
+
+footer .social {
+    display: flex;
+    gap: 50px;
+}
+
+footer .social a {
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--white);
+    color: var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: 0.3s all ease;
+}
+
+footer .social a:hover {
+    background:black;
+    color:palegreen;
+}
+
+header.active {
+    background: var(--purple);
+}
+
+header.active .logo span {
+    text-decoration-color: var(--yellow);
+}
+
+header.active nav a:hover {
+    color: var(--yellow);
+}
+
+@media only screen and (max-width: 992px) {
+    .home .container {
+        max-width: 750px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 40px 40px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header nav.active {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--purple);
+    }
+
+ 
+   .home .container {
+        max-width: 600px;
+    }
+
+    .ourbest .subtitle p {
+        font-size: 1.2em;
+    }
+
+   
+}
+
+
+/* @media only screen and (max-width: 400px){
+
+} */
